@@ -3,12 +3,12 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script type="text/javascript" src="script.js" ></script>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script type="text/javascript" src="js/script.js" ></script>
     <title>Antti's Webpage</title>
   </head>
 
-  <div class="header">
+  <div class="header" style="background-image: url(pictures/codebg.png); background-position: top;">
     <svg viewBox="0 100 1600 250">
 	     <symbol id="s-text">
 		<text text-anchor="middle" x="50%" y="80%">Antti's Webpage</text>
@@ -27,19 +27,16 @@
   <body>
     <div class="topnav" id="myTopnav">
       <a href="#home" class="active">Home</a>
-      <a href="#skills">Skills</a>
+      <a href="skills.html">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
       <a href="#tba">Tba</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
 
     <div class="row">
       <div class="side">
-        <img src="kuva.jpg" alt="Me" style="width:80%;height:80%;">
+        <img src="pictures/kuva.jpg" alt="Me" style="width:80%;height:80%;">
         <h3 id="info">Picture of me</h3>
       </div>
       <div class="main">
@@ -47,7 +44,7 @@
         <button class="button" id="previousButton" onclick="previousFunction()"><span>Previous</span></button>
         <button class="button" id="nextButton" onclick="nextFunction()"><span>Next</span></button>
         <p id="aboutMe">Welcome to my webpage if you want to know more about me click the next button!</P>
-        <img src="pictures/comic.png" alt="Me" style="width:70%;height:30%;" id="picture">
+        <img src="pictures/comic.png" alt="Me" style="width:70%;height:40%;" id="picture">
       </div>
     </div>
 

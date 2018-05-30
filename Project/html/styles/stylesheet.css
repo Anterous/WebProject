@@ -15,7 +15,6 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background-image: url(codebg.png);
     color: white;
 }
 
@@ -213,4 +212,21 @@ footer {
 
 .footer {
   padding-left: 2%;
+}
+
+/*SKILLS STYLESHEET*/
+
+.skillsBody{
+  background-color: Lightblue;
+}
+
+.floated_img
+{
+    float: left;
+    padding: 20px;
+    padding-left: 100px;
+    max-width: 100px
+    max-height: 100px;
+    min-width: 100px;
+    min-height: 100px;
 }
