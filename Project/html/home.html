@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
     <script type="text/javascript" src="js/script.js" ></script>
-    <title>Antti's Webpage</title>
+    <title>Antti's webpage</title>
   </head>
 
   <div class="header" style="background-image: url(pictures/codebg.png); background-position: top;">
@@ -24,7 +24,7 @@
     </svg>
   </div>
 
-  <body>
+  <body onload="helloFunction()">
     <div class="topnav" id="myTopnav">
       <a href="#home" class="active">Home</a>
       <a href="skills.html">Skills</a>
@@ -53,8 +53,16 @@
       <i class="footer" id="timeDate">
         Time and date:
         <strong>
-         <span id="time" ></span>
+         <span id="time"></span>
         </strong>
+<script>
+  function time() {
+    var dateTime = new Date();
+    document.getElementById('time').innerHTML = dateTime;
+  }
+  setInterval(time, 1000);
+  time();
+</script>
       </i>
     </footer>
 

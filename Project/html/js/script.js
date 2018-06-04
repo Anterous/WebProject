@@ -32,6 +32,21 @@ function previousFunction(){
 
 }
 
+function helloFunction(){
+  var msg = new SpeechSynthesisUtterance("This is a webpage with a lot of useless features");
+  window.speechSynthesis.speak(msg);
+}
+
+function scrollFunction(){
+  var msg = new SpeechSynthesisUtterance("Scrolling Scrolling");
+  window.speechSynthesis.speak(msg);
+}
+
+function mouseOverFunction(){
+  window.speechSynthesis.stop();
+  console.log("stop");
+}
+
 function infoFunction(Val){
 
   switch(Val) {
@@ -125,12 +140,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-function time() {
-    var dateTime = new Date();
-    document.getElementById('time').innerHTML = dateTime;
-}
-
-setInterval(time, 1000);
-
-time();

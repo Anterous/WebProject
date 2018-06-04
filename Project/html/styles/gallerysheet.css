@@ -1,5 +1,7 @@
 *{margin:0;padding:0;}
 
+
+
 body {
   background: #111;
   font-family: 'Open Sans', sans-serif;
@@ -109,7 +111,7 @@ footer span{
 
 /* Add an active class to highlight the current page */
 .active {
-    background-color: Grey;
+    background-color: blue;
     color: white;
 }
 
@@ -124,7 +126,7 @@ footer span{
 .bss-slides{
   position: relative;
   display: block;
-  line-height: -1;/*removes the gap if you put a border on the slideshow div*/
+  line-height: 0;/*removes the gap if you put a border on the slideshow div*/
 }
 figcaption {
   line-height: 1.5; /* restores line-height to the child element*/
@@ -133,7 +135,7 @@ figcaption {
  outline: 0;
 }
 .bss-slides figure{
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
 }
@@ -177,7 +179,7 @@ figcaption {
   opacity: 1;
 }
 .bss-slides figcaption a{
-  color: black;
+  color: #fff;
 }
 .bss-next, .bss-prev{
   color: #fff;
