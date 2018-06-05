@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Game to play">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/gamesheet.css">
+    <script type="text/javascript" src="js/gamescript.js" ></script>
+    <title>PuddingInc</title>
+  </head>
+
+  <body class="skillsBody">
+    <div class="topnav" id="myTopnav">
+      <a href="home.html">Home</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="tba.html" class="active">Game</a>
+  </div>
+
+<header>
+  <h1 style="margin-left: 50px;"> Welcome to PuddingInc </h1>
+</header>
+
+<body>
+<div>
+  <i class="text">
+    pudding left:
+    <strong>
+     <span id="pudding">0</span>
+    </strong>
+  </i>
+</div>
+
+</div>
+  <p id="event">Event text</p>
+  <button class="gamebutton" onclick="makePudding()">Make pudding</button>
+  <button class="gamebutton" onclick="sellPudding()">Sell pudding</button>
+
+  <i class="text">
+    Current marketPrice:
+    <strong>
+     <span id="price">0</span>
+    </strong>
+  </i>
+
+  <i class="text">
+    Cash
+    <strong>
+     <span id="cash">0</span>
+    </strong>
+    $
+  </i>
+<div>
+
+<div>
+  <h2 style="padding: 20px">Buy stuff</h2>
+  <p id="assasinPrice">Hire assasins to cut out other pudding delivers to increase the price (1000$)</p>
+  <button class="gamebutton" onclick="hireAssasins()">Hire</button>
+
+  <p id="puddingInc">Buy more slaves. More slaves = more pudding (Increases how much pudding you make per click)(2500$)</p>
+  <button class="gamebutton" onclick="moreSlaves()">Buy more</button>
+
+  <p id="puddingInc">Smuggle child labor from China to sell your pudding. More child workers = more cash (Increases how much pudding you sell per click)(5000$)</p>
+  <button class="gamebutton" onclick="moreKids()">Smuggle child</button>
+</div>
+
+</body>
+</html>

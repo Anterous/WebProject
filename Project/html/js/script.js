@@ -43,8 +43,7 @@ function scrollFunction(){
 }
 
 function mouseOverFunction(){
-  window.speechSynthesis.stop();
-  console.log("stop");
+  document.getElementById('scroll').innerHTML = 'You have hovered over the project';
 }
 
 function infoFunction(Val){
