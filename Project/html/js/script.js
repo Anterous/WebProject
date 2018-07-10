@@ -46,72 +46,79 @@ function mouseOverFunction(){
   document.getElementById('scroll').innerHTML = 'You have hovered over the project';
 }
 
-function infoFunction(Val){
+
+function insertSkill(){
+
+  var table = document.getElementById('skillTable');
+  var Val = document.getElementById('skill').value;
+  var row = document.getElementById('skillRow');
+  console.log(Val);
 
   switch(Val) {
-    case 1:
-        alert("C was my first language");
+    case "Aws":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/aws.png" alt="Skill" width="250"/>';
         break;
-    case 2:
-        alert("C++ was my most used language during first year. I used it to create a basic atm machine for example");
+    case "Java":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/java.png" alt="Skill" width="250"/>';
         break;
-    case 3:
-        alert("We used C# to create simple programs and also used it to create few basic games on Unity");
+    case "C":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/C_logo.png" alt="Skill" width="250"/>';
         break;
-    case 4:
-        alert("Java was was used for the most of second year. We used it create programs and also Adnroid apps and games");
+    case "C#":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/c_sharp.jpg" alt="Skill" width="250"/>';
         break;
-    case 5:
-        alert("Swift was briefly touched during second year");
+    case "C++":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/C++.png" alt="Skill" width="250"/>';
         break;
-    case 6:
-        alert("Html I have lerned by myself and also during a summer course");
+    case "Css":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/css.png" alt="Skill" width="250"/>';
         break;
-    case 7:
-        alert("CSS I have learned by myself and also during a summer course");
+    case "Javascript":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/js.png" alt="Skill" width="250"/>';
         break;
-    case 8:
-        alert("Javascript I learned by myself and it's syntax is fairly similar to other languages");
+    case "Html":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/html.png" alt="Skill" width="250"/>';
         break;
-    case 9:
-        alert("Python have not been used that much but I have a basic understanding of it. I have created a twitter bot that repost keyworded tweets with Python;");
+    case "Sql":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/SQL.png" alt="Skill" width="250"/>';
         break;
-    case 10:
-        alert("Qt creator was used when creating C and C++ programs. It's still one of my favorite IDE:s");
+    case "Swift":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/swift.png" alt="Skill" width="250"/>';
         break;
-    case 11:
-        alert("I use Git for version control and packages installs");
+    case "Git":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/Git.png" alt="Skill" width="250"/>';
         break;
-    case 12:
-        alert("I'm mostly familiar mySQL lite. I have used it for a few programs and projects that needed database");
+    case "Python":
+      row.deleteCell(4);
+      var x = row.insertCell(0);
+      x.innerHTML = '<img src="pictures/Python.png" alt="Skill" width="250"/>';
         break;
-    case 13:
-        alert("I used Visual studio to create C# programs and Unity scripts");
-        break;
-    case 14:
-        alert("I have created few basic games on unity both 3D and 2D");
-        break;
-    case 15:
-        alert("I have created multiple applications with android studio also few games using LibGDX as engine");
-        break;
-    case 16:
-        alert("Android Java is Java with few twists");
-        break;
-    case 17:
-      alert("I have used RaspberryPi for multiple purposes, as a database, twitterbot, emulator and few other projects");
-      break;
-    case 18:
-      alert("I have done all kind of projects with arduino processor interrupts to basic measuring programs");
-      break;
-    case 19:
-      alert("Microsoft office has become very easy and familiar to use");
-      break;
-    case 20:
-      alert("Octave was used to calculate a few math problems and creata data graphs for physic based tests");
-      break;
     default:
-        alert("Error Occured");
-      }
+        alert("The skill doesn't exist")
+}
+
 }
 
 // Next/previous controls
